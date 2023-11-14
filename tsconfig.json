@@ -1,22 +1,22 @@
 {
-  "$schema": "https://json.schemastore.org/tsconfig",
-  "display": "Node 18",
-  "_version": "18.2.0",
   "compilerOptions": {
-    "resolveJsonModule": true,
-    "lib": ["es2023", "DOM"],
-    "module": "Node16",
-    "target": "es2022",
+    "target": "es2020",
+    "module": "commonjs",
     "outDir": "./dist",
-    "strict": false,
+    "noImplicitAny": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
     "esModuleInterop": true,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-    "moduleResolution": "node16",
     "rootDirs": ["src", "tests"],
     "baseUrl": "src",
     "paths": {
       "@/*": ["*"]
-    }
-  }
+    },
+    "plugins": [
+      {
+        "transform": "typescript-transform-paths"
+      }
+    ]
+  },
+  "include": ["src"]
 }
