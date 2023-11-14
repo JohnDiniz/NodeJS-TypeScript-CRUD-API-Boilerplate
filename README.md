@@ -1,6 +1,16 @@
-### Project Documentation
+### Table of Contents
 
-#### Prerequisites
+1. [Prerequisites](#prerequisites)
+2. [Installation](#installation)
+3. [Database Setup with Prisma](#database-setup-with-prisma)
+4. [Development](#development)
+5. [Testing](#testing)
+6. [API Documentation](#api-documentation)
+7. [Important Notes](#important-notes)
+
+---
+
+### Prerequisites
 
 Before running the project, make sure you have the following prerequisites installed:
 
@@ -8,7 +18,7 @@ Before running the project, make sure you have the following prerequisites insta
 - npm (Node Package Manager)
 - PostgreSQL database
 
-#### Installation
+### Installation
 
 1. Clone the repository:
 
@@ -28,7 +38,7 @@ Before running the project, make sure you have the following prerequisites insta
    npm install
    ```
 
-#### Database Setup with Prisma
+### Database Setup with Prisma
 
 1. Ensure that you have a PostgreSQL database available.
 
@@ -55,7 +65,7 @@ Before running the project, make sure you have the following prerequisites insta
    npm run test:seed
    ```
 
-#### Development
+### Development
 
 - **Run Migrations for Development:**
 
@@ -81,7 +91,7 @@ Before running the project, make sure you have the following prerequisites insta
   npm run dev
   ```
 
-#### Testing
+### Testing
 
 - **Run Migrations for Tests:**
 
@@ -107,11 +117,11 @@ Before running the project, make sure you have the following prerequisites insta
   npm test
   ```
 
-#### API Documentation
+### API Documentation
 
 - Swagger API documentation is available at [http://localhost:3000/api-docs](http://localhost:3000/api-docs) when the server is running.
 
-#### Important Notes
+### Important Notes
 
 - Ensure that your PostgreSQL database is running and accessible.
 - Make sure to run Prisma migrations and seed the database before running the application in development or test modes.
