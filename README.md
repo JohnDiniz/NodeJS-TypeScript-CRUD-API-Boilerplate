@@ -6,7 +6,8 @@
 4. [Development](#development)
 5. [Testing](#testing)
 6. [API Documentation](#api-documentation)
-7. [Important Notes](#important-notes)
+7. [Technologies Used](#technologies-used)
+8. [Important Notes](#important-notes)
 
 ---
 
@@ -120,6 +121,23 @@ Before running the project, make sure you have the following prerequisites insta
 ### API Documentation
 
 - Swagger API documentation is available at [http://localhost:3000/api-docs](http://localhost:3000/api-docs) when the server is running.
+
+Certainly! Here's the updated table with skill icons using the skillicons.dev service:
+
+[![My Skills](https://skillicons.dev/icons?i=nodejs,express,prisma,postgresql,swagger,winston,jest,joi&theme=light)](https://skillicons.dev)
+
+| Technology | Description                                                             | Icon                                                     |
+| ---------- | ----------------------------------------------------------------------- | -------------------------------------------------------- |
+| Node.js    | JavaScript runtime built on Chrome's V8 engine                          | ![Node.js](https://skillicons.dev/svg/nodejs.svg)        |
+| Express.js | Web application framework for Node.js                                   | ![Express.js](https://skillicons.dev/svg/express.svg)    |
+| Prisma     | Database toolkit and ORM for Node.js                                    | ![Prisma](https://skillicons.dev/svg/prisma.svg)         |
+| PostgreSQL | Open-source relational database                                         | ![PostgreSQL](https://skillicons.dev/svg/postgresql.svg) |
+| Swagger    | API documentation framework                                             | ![Swagger](https://skillicons.dev/svg/swagger.svg)       |
+| Winston    | Logger for Node.js                                                      | ![Winston](https://skillicons.dev/svg/winston.svg)       |
+| Jest       | JavaScript testing framework                                            | ![Jest](https://skillicons.dev/svg/jest.svg)             |
+| Joi        | Object schema description language and validator for JavaScript objects | ![Joi](https://skillicons.dev/svg/joi.svg)               |
+
+Click on the "My Skills" badge to view the icons on skillicons.dev. Feel free to customize the theme or add more technologies as needed.
 
 ### Important Notes
 
