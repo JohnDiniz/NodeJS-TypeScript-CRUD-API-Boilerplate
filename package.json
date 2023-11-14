@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "swagger": "node ./src/swagger.js",
-    "build": "tsc ",
+    "build": "tsc",
     "test": "cross-env NODE_ENV=test jest --passWithNoTests --runInBand",
     "test:coverage": "npm run test:load-envs -- jest -- --coverage --runInBand",
     "test:migration:run": "npm run test:load-envs prisma migrate deploy",
@@ -17,7 +16,8 @@
     "dev:migration:run": "npm run dev:load-envs prisma migrate deploy",
     "dev:migration:generate": "npm run dev:load-envs prisma migrate dev",
     "dev:seed": "npm run dev:load-envs prisma db seed",
-    "dev": "cross-env NODE_ENV=development nodemon --watch 'src/' --exec 'ts-node -r tsconfig-paths/register ./src/server.ts' -e ts"
+    "dev": "cross-env NODE_ENV=development nodemon --watch 'src/' --exec 'ts-node -r tsconfig-paths/register ./src/server.ts' -e ts",
+    "swagger": "swagger-jsdoc -d $(pwd)/swaggerConfig.js -o swagger.json"
   },
   "keywords": [],
   "author": "",
@@ -25,6 +25,7 @@
   "dependencies": {
     "@prisma/client": "^5.5.2",
     "@types/node": "^20.9.0",
+    "@types/swagger-ui-express": "^4.1.6",
     "axios": "^1.6.1",
     "cors": "^2.8.5",
     "dotenv": "^16.3.1",

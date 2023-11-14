@@ -1,6 +1,5 @@
 import swaggerJSDoc from 'swagger-jsdoc';
-import swaggerUI from 'swagger-ui-express';
-import express from 'express';
+import path from 'path';
 
 const options = {
   definition: {
@@ -11,7 +10,7 @@ const options = {
       description: 'Your API Description',
     },
   },
-  apis: ['./src/routers/*.ts', './src/schemas/*.ts', './src/controllers/*.ts'],
+  apis: [path.resolve(__dirname, 'swagger.yaml')],
   components: {
     schemas: {
       Log: {
@@ -25,10 +24,4 @@ const options = {
   },
 };
 
-const swaggerSpec = swaggerJSDoc(options);
-
-const app = express();
-
-app.use('/api-docs', swaggerUI.serve, swaggerUI.setup(swaggerSpec));
-
-export default app;
+export const swaggerSpec = swaggerJSDoc(options);
