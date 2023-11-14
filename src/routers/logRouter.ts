@@ -1,4 +1,3 @@
-// template-server/src/routers/logRouter.ts
 import express from 'express';
 import { logController } from '@/controllers';
 import { validateBody } from '@/middlewares';
