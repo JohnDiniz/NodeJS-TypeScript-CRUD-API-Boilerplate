@@ -1,3 +1,3 @@
-import { prisma } from '@/config';
+// import { prisma } from '@/config';
 
 export async function cleanDb() {}
