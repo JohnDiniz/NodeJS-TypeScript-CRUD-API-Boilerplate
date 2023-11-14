@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "prebuild": "rm -rf dist",
-    "build": "tsc && tsc-alias",
-    "prepare": "husky install",
+    "build": "tsc",
     "start": "node ./dist/server.js",
     "test": "cross-env NODE_ENV=test jest --passWithNoTests --runInBand",
     "test:coverage": "npm run test:load-envs -- jest -- --coverage --runInBand",
