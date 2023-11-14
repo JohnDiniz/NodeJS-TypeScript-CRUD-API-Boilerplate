@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "prebuild": "rm -rf dist",
-    "build": "tsc && tsc-alias",
-    "prepare": "husky install",
+    "build": "tsc",
     "start": "node ./dist/server.js",
     "lint": "eslint .",
     "lint:staged": "lint-staged",
@@ -26,18 +25,6 @@
   },
   "engines": {
     "node": ">=18.18.0 <19.0.0"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.{js,jsx,ts,tsx,json,css,scss,md}": [
-      "prettier --write",
-      "eslint --fix",
-      "git add"
-    ]
   },
   "keywords": [],
   "author": "",
