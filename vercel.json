@@ -1,5 +1,18 @@
 {
   "version": 2,
-  "builds": [{ "src": "src/server.ts", "use": "@vercel/node" }],
-  "routes": [{ "src": "/(.*)", "dest": "/src/server.ts" }]
+  "builds": [
+    {
+      "src": "src/server.ts",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    { "handle": "filesystem" },
+    { "src": "/api/health", "dest": "/src/routers/healthRouter.ts" },
+    { "src": "/api/log", "dest": "/src/routers/logRouter.ts" },
+    {
+      "src": "/api/(.*)",
+      "dest": "/src/routers/index.ts"
+    }
+  ]
 }
