@@ -4,9 +4,9 @@
   "_version": "18.2.0",
   "compilerOptions": {
     "resolveJsonModule": true,
-    "lib": ["es2023", "DOm"],
+    "lib": ["es2020", "DOm"],
     "module": "node16",
-    "target": "es2022",
+    "target": "es2020",
     "outDir": "./dist",
     "strict": false,
     "esModuleInterop": true,
