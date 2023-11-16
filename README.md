@@ -137,6 +137,12 @@ Here is a table summarizing the technologies used in your project, along with co
 
 Feel free to update the descriptions or add more technologies as needed.
 
+| Deployment Option | Description                                                                                   | Link                           | Icon |
+| ----------------- | --------------------------------------------------------------------------------------------- | ------------------------------ | ---- |
+| Render            | Modern cloud platform offering seamless and scalable deployment for web applications          | [Render](https://render.com)   | 🚀   |
+| Vercel            | Platform for static and Jamstack deployment with a powerful and easy-to-use interface         | [Vercel](https://vercel.com)   | 🌐   |
+| Railway           | Platform simplifying deployment by automating server management, supporting various databases | [Railway](https://railway.app) | 🚄   |
+
 ### Important Notes
 
 - Ensure that your PostgreSQL database is running and accessible.
