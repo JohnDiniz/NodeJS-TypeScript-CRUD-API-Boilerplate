@@ -1,6 +1,6 @@
 import express, { Express } from 'express';
 import swaggerUI from 'swagger-ui-express';
-import swaggerDocument from './swagger.json'; // Importe diretamente o arquivo JSON
+import swaggerDocument from './swagger.json';
 import { connectDb } from '@/config';
 import { healthRouter, logRouter } from '@/routers';
 

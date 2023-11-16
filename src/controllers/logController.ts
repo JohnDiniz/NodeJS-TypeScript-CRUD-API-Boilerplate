@@ -1,6 +1,6 @@
-import { CreateLogMessage } from '@/services';
 import { Request, Response } from 'express';
 import httpStatus from 'http-status';
+import { CreateLogMessage } from '@/services';
 import logger from '@/utils/logger';
 
 export async function logController(req: Request, res: Response) {

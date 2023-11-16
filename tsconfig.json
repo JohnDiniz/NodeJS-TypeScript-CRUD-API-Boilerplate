@@ -4,8 +4,8 @@
   "_version": "18.2.0",
   "compilerOptions": {
     "resolveJsonModule": true,
-    "lib": ["es2023", "DOM"],
-    "module": "Node16",
+    "lib": ["es2023", "DOm"],
+    "module": "node16",
     "target": "es2022",
     "outDir": "./dist",
     "strict": false,
