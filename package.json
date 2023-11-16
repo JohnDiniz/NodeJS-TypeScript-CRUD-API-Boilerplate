@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "prebuild": "rm -rf dist",
-    "build": "tsc && tsc-alias && npm run prisma generate",
+    "build": "tsc && tsc-alias",
+    "postinstall": "prisma generate",
     "prepare": "husky install",
     "start": "node ./dist/server.js",
     "lint": "eslint .",
