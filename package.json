@@ -1,8 +1,7 @@
 {
   "name": "template-server",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "boilerplate template server",
   "scripts": {
     "prebuild": "rm -rf dist",
     "build": "tsc && tsc-alias",
@@ -58,9 +57,11 @@
     "swagger-typescript-api": "^13.0.3",
     "swagger-ui-express": "^5.0.0",
     "tsc-alias": "^1.8.8",
-    "winston": "^3.11.0"
+    "winston": "^3.11.0",
+    "xss": "^1.0.14"
   },
   "devDependencies": {
+    "@faker-js/faker": "^8.3.1",
     "@types/cors": "^2.8.16",
     "@types/express": "^4.17.21",
     "@types/jest": "^29.5.8",

@@ -1,8 +1,13 @@
 import { PrismaClient } from '@prisma/client';
 
-export let prisma: PrismaClient;
+export let prisma: PrismaClient | undefined;
+
 export function connectDb(): void {
-  prisma = new PrismaClient({ log: ['query'] });
+  if (process.env.NODE_ENV === 'development') {
+    prisma = new PrismaClient({ log: ['query'] });
+  } else {
+    prisma = new PrismaClient();
+  }
 }
 
 export async function disconnectDB(): Promise<void> {
